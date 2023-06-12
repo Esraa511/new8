@@ -1,1 +1,217 @@
+body{
+    margin: 0;
+    /* background-color: gray; */
+    background: url("../media/backgroundsky.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+.box{
+    display: flex;
+    overflow: hidden;
+    background-color: #040404e0;
+    position: relative;
+    height: 100vh;
+}
+nav{
+    width: 30%;
+    height: calc(100vh - 20px);
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    border-radius: 7px 0 0 7px;
+}
+nav #btn{
+    width: 50%;
+    height: 15vh;
+    margin-left: 50%;
+    transform: translatex(-50%);
+    border-radius: 50%;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+nav .name{
+    margin-top: -5px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-weight: bolder;
+    font-size: 18px;
+}
+nav .job{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 15px;
+    color: #009688;
+    font-weight: bold;
+}
+nav .info{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5%;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border-bottom: 1px solid gray;
+}
+nav .outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .info i{
+    color: #009688;
+    padding-right: 7px;
+    font-size: 10px;
+    float: left;
+} 
+nav .info span{
+    color: gray;
+    font-size: 14px;
+}
+nav .info a{
+    text-decoration: none;
+    color: #00BCD4;
+    font-size: 14px;
+    word-break: break-word;
+}
+nav .skil{
+    text-align: end;
+    padding: 0 20px 10px 10px;
+    border-bottom: 1px solid gray;
+}
+nav .learn{
+    text-align: end;
+    padding: 0 20px 10px 10px;
+}
+nav .title{
+    font-weight: bold;
+    color: #009688;
+}
+nav .skil ul{
+    list-style-type: none;
+    color: #ffffffb8;
+}
+nav .p{
+    color: #ffffffb8;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+#long{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 7px;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    transition: .5s;
+    z-index: 20;
+}
+#long img{
+    width: 100%;
+    height: 100%;
+}
+#long .x{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    padding: 4px 0px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0 0 0 7px;
+    color: white;
+    background: black;
+}
+#long .x:hover{
+    opacity: .8;
+    box-shadow: inset 0px 0px 3px 0px white;
+
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.main{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow-y: scroll;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.main .one{
+    text-align: end;
+    border: 2px solid gray;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+    background: #dfd8d8;
+}
+.main .title{
+    position: absolute;
+    top: -30px;
+    right: 12px;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    color: #009688;
+    font-weight: bold;
+}
+.main .two .show{
+    margin-bottom: 0;
+}
+.main .two ul{
+    list-style-type: none;
+    padding-right: 25px;
+    color: #464848;
+    margin-top: 10px;
+}
+.main ul i{
+    font-size: 10px;
+    color: #009688;
+}
+.main .two{
+    text-align: end;
+    border: 2px solid gray;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+    background: #dfd8d8;
+}
+.main .three , .four{
+    border: 2px solid gray;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+    background: #dfd8d8;
+}
+.main .outv video{
+    width: 100%;
+    height: 50vh;
+}
+.main .outi img{
+    width: 49%;
+    height: 25vh;
+}
+@media(max-width:567px){
+    .main .outi img{
+    width: 100%;
+    height: 25vh;
+}
+}
+
+
 
