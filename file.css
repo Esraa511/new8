@@ -1,7 +1,7 @@
 body{
     margin: 0;
     /* background-color: gray; */
-    background: url("../media/backgroundsky.jpg");
+    background: url("media/backgroundsky.jpg");
     background-size: cover;
     overflow: hidden;
 }
